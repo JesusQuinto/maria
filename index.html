@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Habla con María</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<div id="help">
+		<div id="info">
+			<h2>Emociones</h2>
+			<p>Puedes hablar de tus emociones como:</p>
+			<ul>
+				<li>Alegria</li>
+				<li>Tristesa</li>
+				<li>Incomodidad</li>
+				<li>Sorprendida</li>
+				<li>Impresionada</li>
+			</ul>
+			<h2>Restaurar emocion</h2>
+			<ul>
+				<li>Parar</li>
+				<li>Pausar</li>
+				<li>stop</li>
+				<li>detener</li>
+			</ul>
+			<h2>Ayuda</h2>
+			<p>Para mostrar esta ventana de dialo puedes pedir ayuda contestando:</p>
+			<ul>
+				<li>Que puedo decir</li>
+				<li>Necesito Ayuda</li>
+			</ul>
+		</div>
+		<button onclick="done()">Listo</button>
+	</div>
+	<div id="dialog">
+		<div id="wrapperEmotion" class="contenta" ></div>		
+		<div class="conversation">
+			<div id="window"></div>
+			<div id="suggestion"></div>
+			<input type="text" id="text">
+			<button onclick="update()">contestar</button>
+		</div>
+	</div>
+	<audio id="audio" controls="controls">
+	  <source id="audioSource" src=""></source>
+	  Your browser does not support the audio format.
+	</audio>
+</body>
+</html>
+
+<script src="myscript.js"></script>
